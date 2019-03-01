@@ -1,0 +1,9 @@
+uuid: fffb002e-3598-4f8a-8ab3-104f34edca45
+langcode: en
+status: true
+dependencies: {  }
+name: Навык
+vid: navyk
+description: 'Развитие навыка'
+hierarchy: 0
+weight: 0

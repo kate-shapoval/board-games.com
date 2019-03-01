@@ -1,0 +1,39 @@
+uuid: ba295217-692a-4ef4-9d49-37ad18bb9bc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.game
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__game_block_2
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'views_block:game-block_2'
+settings:
+  id: 'views_block:game-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      game: game
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/game\r\n/"
+    negate: false
+    context_mapping: {  }

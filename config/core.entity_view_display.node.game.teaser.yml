@@ -1,0 +1,48 @@
+uuid: 9d1907c2-cd86-4ed2-84d3-04609356aa53
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.game.body
+    - field.field.node.game.field_comments
+    - field.field.node.game.field_image
+    - field.field.node.game.field_navyk
+    - field.field.node.game.field_taxonomy
+    - image.style.medium
+    - node.type.game
+  module:
+    - image
+    - text
+    - user
+id: node.game.teaser
+targetEntityType: node
+bundle: game
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_comments: true
+  field_navyk: true
+  field_taxonomy: true

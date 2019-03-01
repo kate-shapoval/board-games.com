@@ -1,0 +1,38 @@
+uuid: dc4c8eb5-6615-4e72-951a-8ace0a48976a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.skill
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__skill_block_1
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:skill-block_1'
+settings:
+  id: 'views_block:skill-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      game: game
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

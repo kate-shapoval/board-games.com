@@ -1,0 +1,29 @@
+uuid: 71de18a6-3745-45d0-8ca0-dd8266c4d60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navyk
+    - node.type.game
+    - taxonomy.vocabulary.navyk
+id: node.game.field_navyk
+field_name: field_navyk
+entity_type: node
+bundle: game
+label: навык
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      navyk: navyk
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

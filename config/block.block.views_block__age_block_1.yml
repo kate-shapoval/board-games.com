@@ -1,0 +1,40 @@
+uuid: 55b7d889-93d4-493b-ba00-49a434142599
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.age
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__age_block_1
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:age-block_1'
+settings:
+  id: 'views_block:age-block_1'
+  label: Возраст
+  provider: views
+  label_display: visible
+  views_label: Возраст
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      game: game
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "*\r\n<front>"
+    negate: false
+    context_mapping: {  }
