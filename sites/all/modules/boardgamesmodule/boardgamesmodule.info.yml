@@ -1,0 +1,6 @@
+name: boardgamesmodule
+description: 'Board Games module - Custom Blocks< About Us page and hooks for login form'
+type: module
+core: 8.x
+version: 1.0
+package: Custom

@@ -2,7 +2,7 @@ uuid: 1abdcaa0-af63-4c52-b3ef-887613561aef
 langcode: en
 status: true
 dependencies: {  }
-name: Возраст
+name: Age
 vid: age
 description: 'возраст игрока'
 hierarchy: 0

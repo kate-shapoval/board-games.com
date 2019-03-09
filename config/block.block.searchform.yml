@@ -1,0 +1,26 @@
+uuid: 8eb00e6d-a6f8-4924-99c5-17f31e8ddb37
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - boardgames
+id: searchform
+theme: boardgames
+region: search_region
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,6 @@
+boardgamesmodule.hellopage:
+  path: '/about-us'
+  defaults:
+    _controller: '\Drupal\boardgamesmodule\Controller\AboutUsController::show'
+  requirements:
+    _permission: 'view content'

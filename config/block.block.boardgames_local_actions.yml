@@ -1,0 +1,20 @@
+uuid: c34f8d2a-4d00-4f51-ab23-5ab1711c983d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boardgames
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: boardgames_local_actions
+theme: boardgames
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

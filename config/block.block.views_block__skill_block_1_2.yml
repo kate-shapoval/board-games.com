@@ -1,0 +1,24 @@
+uuid: 6bbc4f78-9244-4c73-9f4e-2bca24db2048
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.skill
+  module:
+    - views
+  theme:
+    - boardgames
+id: views_block__skill_block_1_2
+theme: boardgames
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:skill-block_1'
+settings:
+  id: 'views_block:skill-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

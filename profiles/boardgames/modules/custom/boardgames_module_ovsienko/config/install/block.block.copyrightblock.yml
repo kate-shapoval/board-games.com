@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - boardgamesmodule
+  theme:
+    - boardgames
+id: copyrightblock
+theme: boardgames
+region: footer
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  provider: boardgamesmodule
+  label_display: '0'
+visibility: {  }

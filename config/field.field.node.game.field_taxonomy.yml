@@ -10,7 +10,7 @@ id: node.game.field_taxonomy
 field_name: field_taxonomy
 entity_type: node
 bundle: game
-label: taxonomy
+label: age
 description: ''
 required: false
 translatable: false

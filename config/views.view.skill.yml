@@ -151,11 +151,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Block-Skill
     position: 1
     display_options:
       display_extenders: {  }
       block_description: Skill
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

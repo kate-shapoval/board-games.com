@@ -1,0 +1,17 @@
+{% extends "@classy/block/block--search-form-block.html.twig" %}
+{#
+/**
+ * @file
+ * Implementation for a search form block. 
+ *
+ * @see template_preprocess_block()
+ * @see search_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+{% block content %}
+  <div{{ content_attributes.addClass('content', 'container-inline') }}>
+    {{ parent() }}
+  </div>
+{% endblock %}

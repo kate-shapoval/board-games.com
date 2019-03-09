@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Place your custom PHP code in this file.
+ */
+use \Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function boardgamesmodule_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	$form['wellcome'] = [
+		'#weight' => -100,
+		'#markup' => '<h3>Введите данные в поля формы</h3>',
+	];
+	$form['name']['#attributes']['placeholder'] = 'Введите свой логин';
+	$form['pass']['#attributes']['placeholder'] = 'Введите свой пароль';
+}
+/**
+ * Implements hook_user_login().
+ */
+function boardgamesmodule_user_login($account) {
+  $message = new TranslatableMarkup('Привет, <strong>@username</strong>',[
+  	'@username' => $account->getDisplayName(),
+  ]);
+  \Drupal::messenger()->addMessage($message);
+}

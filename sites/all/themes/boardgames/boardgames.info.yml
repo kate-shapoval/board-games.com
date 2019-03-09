@@ -1,0 +1,20 @@
+core: 8.x
+type: theme
+base theme: bartik
+name: Board games
+description: 'This theme was deveoped for learning Drupal 8 purposes.'
+screenshot: screenshot.png
+package: ''
+
+regions:
+  header: 'Header'
+  menu_main: 'Main menu'
+  search_region: 'Search Block'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  content: 'Content'
+  footer: 'Footer'
+  hidden_block: 'Hidden Block'
+
+libraries:
+    - boardgames/global-styling

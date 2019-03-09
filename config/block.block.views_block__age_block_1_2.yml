@@ -1,0 +1,24 @@
+uuid: 0ef6b6c3-eb12-440a-a13e-16a541e5e401
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.age
+  module:
+    - views
+  theme:
+    - boardgames
+id: views_block__age_block_1_2
+theme: boardgames
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'views_block:age-block_1'
+settings:
+  id: 'views_block:age-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

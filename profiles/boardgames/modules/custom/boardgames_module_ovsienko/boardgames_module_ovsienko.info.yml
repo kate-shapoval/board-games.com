@@ -1,0 +1,11 @@
+name: 'Module Ovsienko'
+type: module
+core: 8.x
+package: boardgames
+description: module
+dependencies:
+  - block
+  - boardgamesmodule
+  - system
+  - user
+version: 8.x-1.0

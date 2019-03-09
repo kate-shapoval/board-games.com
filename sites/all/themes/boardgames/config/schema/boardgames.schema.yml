@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the Board games theme.
+
+boardgames.settings:
+  type: theme_settings
+  label: 'Board games Settings'

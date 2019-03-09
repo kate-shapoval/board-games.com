@@ -10,7 +10,7 @@ id: node.game.field_navyk
 field_name: field_navyk
 entity_type: node
 bundle: game
-label: навык
+label: skill
 description: ''
 required: false
 translatable: false

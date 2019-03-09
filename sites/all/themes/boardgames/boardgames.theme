@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ *
+ * Place your custom PHP code in this file.
+ */
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function boardgames_theme_suggestions_node_alter(&$suggestions, $variables, $hook){
+    $suggestions[] = 'node__' . 'first';
+}
+/**
+ * Implements hook__preprocess_page().
+ */
+function boardgames_preprocess_page(&$variables){
+
+   $variables['page']['highlighted']= array( 
+        '#type' => 'markup', 
+        '#markup' => '<div style="clear:both;">Акция -15% до конца недели!</div><a href="#" id="work-js">Work Js</a>', 
+    );        
+}

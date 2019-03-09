@@ -1,0 +1,15 @@
+{% extends "@classy/misc/status-messages.html.twig" %}
+{#
+/**
+ * @file
+ * Implementation for status messages.
+ */
+#}
+{% block messages %}
+  {% if message_list is not empty %}
+    {{ attach_library('bartik/messages') }}
+    <div class="messages__wrapper layout-container">
+      {{ parent() }}
+    </div>
+  {% endif %}
+{% endblock messages %}
